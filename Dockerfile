@@ -12,3 +12,6 @@ RUN /opt/conda/bin/conda install --yes --freeze-installed \
     && find /opt/conda/ -follow -type f -name '*.a' -delete \
     && find /opt/conda/ -follow -type f -name '*.pyc' -delete \
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete
+
+# Entry point for dis.co
+WORKDIR /local/
