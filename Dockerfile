@@ -15,4 +15,4 @@ RUN /opt/conda/bin/conda install --yes --freeze-installed \
 
 # Entry point for dis.co
 WORKDIR /local/
-ENTRYPOINT ["python", "-u"]
+ENTRYPOINT ["/opt/conda/bin/python", "-u"]
