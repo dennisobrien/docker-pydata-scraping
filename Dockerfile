@@ -14,5 +14,6 @@ RUN /opt/conda/bin/conda install --yes --freeze-installed \
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete
 
 # Entry point for dis.co
+ENV PATH /opt/conda/bin/:/opt/conda/envs/env/bin:$PATH
 WORKDIR /local/
-ENTRYPOINT ["/opt/conda/bin/python", "-u"]
+ENTRYPOINT ["python", "-u"]
